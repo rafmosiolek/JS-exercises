@@ -156,5 +156,72 @@ Logical Operators, like &&, ||, !==, and !, can compare two variables to see if 
 */
 
 
+/* FUNCTIONS
+
+A JavaScript function is a block of code designed to perform a particular task.
+
+
+SYNTAX:
+
+function name(parameter1, parameter2, parameter3) {
+    code to be executed
+}
+
+
+*/
+
+
+var calculatorOn = false;
+
+function pressPowerButton() {
+    if(calculatorOn) {
+        console.log("Calculator turning off.");
+        calculatorOn = false;
+    } else {
+        console.log("Calculator turning on.");
+        calculatorOn = true
+
+    }
+}
+
+pressPowerButton(); //Output:Calculator turning off.
+
+pressPowerButton(); //Output:Calculator turning on.
+
+// This code turns the calculator on if it is currently off, and turns it off if the calculator is currently on.
+
+
+
+function multiplyByThirteen(inputNumber) {  // inputNumber is a PARAMETER for function multiplyByThirteen
+    console.log(inputNumber * 13);  // to print the inputNumber multiplied by thirteen
+}
+
+multiplyByThirteen(9); // inputNumber is a PARAMETER, but 9 is an ARGUMENT. Arguments are provided when you call a function, and parameters receive arguments as their value.
+//Output: 117, because 9*13===117
+
+
+/* Function Invocation
+The code inside the function will execute when "something" invokes (calls) the function:
+
+When an event occurs (when a user clicks a button)
+When it is invoked (called) from JavaScript code
+Automatically (self invoked) */
+
+
+
+/* When JavaScript reaches a return statement, the function will stop executing.
+If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement.
+Functions often compute a return value. The return value is "returned" back to the "caller". */
+
+var x = myFunction(4,3);    // Function is called, return value will end up 
+in x
+
+function myFunction (a,b) {
+    return a * b        // Function returns the product of a and b
+}
+
+// The result in x will be 12.
+
+
 
 
