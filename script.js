@@ -59,7 +59,7 @@ LOGICAL OPERATORS
 
 && both must be true;
 || either can be true;
-! opposite what it really is
+! opposite to what it really is
 
 */
 
@@ -70,7 +70,68 @@ if (coffee && milk === "steamed microfoam") {
 }
 
 
+/* SWITCH STATEMENTS
 
+The switch statement is used to perform different actions based on different conditions.
+
+*/
+
+
+
+
+// Switch statements syntax:
+
+switch(expression) {
+    case n:
+        code block
+        break;
+    case n:
+        code block
+        break;
+    default:
+        code block
+}
+
+
+switch (new Date() .getDay()) { // The getDay() method returns the weekday as a number between 0 and 6, where Sunday = 0).
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday"
+        break;
+    case 3:
+        day = "Wednesday"
+        break;
+    case 4:
+        day = "Thursday"
+        break;
+    case 5:
+        day = "Friday"
+        break;
+    case 6:
+        day = "Saturday"
+        break;
+}
+
+/*
+
+The break Keyword
+
+When JavaScript reaches a break keyword, it breaks out of the switch block.
+
+This will stop the execution of more code and case testing inside the block.
+
+When a match is found, and the job is done, it's time for a break. There is no need for more testing.
+
+A break can save a lot of execution time because it "ignores" the execution of all the rest of the code in the switch block.
+
+It is not necessary to break the last case in a switch block. The block breaks (ends) there anyway.
+
+*/
 
 
 
