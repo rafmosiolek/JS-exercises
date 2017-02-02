@@ -1,6 +1,7 @@
 // SYNTAX EXERCISES
 
-var stopLight = "green"; // variable
+var stopLight = "green"; /* variable; variables allows to assign data to a word value.
+ If the value will change, we can change the variable's value insted of rewriting the whole program. */
 
 if (stopLight === "red") { // condition
     console.log("Stop!");
@@ -27,3 +28,39 @@ A block statement (or compound statement in other languages, or code block) is u
 The block is delimited by a pair of curly brackets and may optionally be labelled.
 
 */
+
+
+
+
+/*
+COMPARISON OPERATORS
+
+=== equal to
+!== not equal to
+> greater than
+< less than
+<= less than or equal to
+>= greater than or equal to
+*/
+
+var myName = "Raf";
+if (myName.length <= 3) {
+    console.log("You have a short funny name, bud!"); // it will run, because name Raf is less or equal to number 3
+}
+
+if (10*224/16+158===1) {
+    console.log("The condition is true");
+} else {
+    console.log("The condition is false"); // the condition is obviously false, so the second code block will run
+}
+
+
+
+
+
+
+
+
+
+
+
