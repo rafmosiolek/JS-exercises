@@ -268,6 +268,81 @@ Finally, on the last line, we interpolated the function call within a console.lo
 
 We can use functions to section off small bits of logic or tasks, then use them when we need to. Writing functions can help take large and difficult problems and break them into small and manageable problems.
 
+*/
+
+var orderCount = 0;
+
+function takeOrder(topping, crustType) {
+  console.log('Order: ' + crustType + ' crust topped with ' + topping);
+  orderCount = orderCount + 1;
+}
+
+function getSubTotal(itemCount) {
+  return itemCount * 7.5;
+}
+
+function getTax() {
+  return getSubTotal(orderCount) * 0.06;
+}
+
+function getTotal() {
+ return getSubTotal(orderCount) + getTax(); 
+}
+
+takeOrder('bacon', 'thin');
+takeOrder('pepperoni', 'regular');
+takeOrder('pesto', 'thin');
+
+console.log(getSubTotal(orderCount));
+console.log(getTotal());
+
+
+
+/* 
+
+FUNCTIONS REVIEW:
+
+1.  Functions are written to perform a task.
+2.  Functions take data or variables, perform a set of tasks on them, and then return the result.
+3.  We can define parameters when calling the function.
+4.  When calling a function, we can pass in arguments, which will set the function's parameters.
+5.  We can use return to return the result of a function which allows us to call functions anywhere, even inside other functions.
+
+*/
+
+
+
+
+
+// SCOPE
+
+
+/* 
+
+Scope refers to where in a program a variable can be accessed. 
+The idea is that some variables are unable to be accessed everywhere within a program.
+
+Scope - The current context of execution. The context in which values and expressions are "visible," or can be referenced.
+If a variable or other expression is not "in the current scope," then it is unavailable for use.
+Scopes can also be layered in a hierarchy, so that child scopes have access to parent scopes, but not vice versa.
+
+A function serves as a closure in JavaScript, and thus creates a scope, so that (for example) a variable defined exclusively within the function cannot be accessed from outside the function or within other functions.
+
+
+GLOBAL SCOPE - In a programming environment, the global scope is the scope that contains, and is visible in, all other scopes.
+In client-side JavaScript, the global scope is generally the web page inside which all the code is being executed.
+
+
+*/
+
+var laundryRoom = 'Basement'; // global scope
+var mailRoom = 'Room 1A';   // global scope
+
+var myApartment = function() {
+  var mailBoxNumber = 'Box 3'; // functional scope
+  var laundryRoom = 'In-unit'; // functional scope
+  console.log('Mail box: ' + mailBoxNumber + ', Laundry:' + laundryRoom);
+};
 
 
 
