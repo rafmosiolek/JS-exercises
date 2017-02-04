@@ -190,7 +190,30 @@ pressPowerButton(); //Output:Calculator turning on.
 
 // This code turns the calculator on if it is currently off, and turns it off if the calculator is currently on.
 
+/*
 
+1.  On line 174, we have a variable named calculatorOn set to false. Our program starts with the calculator in the off position.
+
+2.  On line 176, there's a function named pressPowerButton. Functions follow this syntax:
+
+        • They begin with the JavaScript keyword >>function<<.
+
+        • After function comes the name of the function. pressPowerButton is the name of the function. 
+        Notice there are no spaces in the name and each new word is capitalized. This is a convention in the JavaScript community called >>camelCase<<.
+
+        • After the function's name, comes parentheses () with parameters inside.
+
+        • Finally, the function has a block of code it executes between the curly braces {}.
+            
+3.  Inside the function is an if/else statement.
+
+4.  On the last few lines, we make the function run by writing pressPowerButton(). This term for this is calling the function. We call it with pressPowerButton(), and it runs all the code in the block of the function.
+We executed the code in the block of the function twice without having to write it twice. Functions can make code reusable!
+*/
+
+
+
+//  AD. 2 
 
 function multiplyByThirteen(inputNumber) {  // inputNumber is a PARAMETER for function multiplyByThirteen
     console.log(inputNumber * 13);  // to print the inputNumber multiplied by thirteen
@@ -199,6 +222,7 @@ function multiplyByThirteen(inputNumber) {  // inputNumber is a PARAMETER for fu
 multiplyByThirteen(9); // inputNumber is a PARAMETER, but 9 is an ARGUMENT. Arguments are provided when you call a function, and parameters receive arguments as their value.
 //Output: 117, because 9*13===117
 
+// Parameters let us write logic inside functions that can be modified based on when we call the function, which will help make our functions more flexible.
 
 /* Function Invocation
 The code inside the function will execute when "something" invokes (calls) the function:
@@ -221,6 +245,51 @@ function myFunction (a,b) {
 }
 
 // The result in x will be 12.
+
+
+
+// When functions return their value, we can use them together and inside one another:
+
+function multiplyByNineFifths(celsius) {
+  return celsius * (9/5);
+}
+
+function getFahrenheit(celsius) {
+  return multiplyByNineFifths(celsius) + 32;
+}
+
+console.log('The temperature is ' + getFahrenheit(15) + '°F');
+// Output: The temperature is 59°F
+
+/* Inside of function getFahrenheit block, we called multiplyByNineFifths and passed it the degrees in celsius. The multiplyByNineFifths function multiplied the celsius by (9/5).
+Then it returned its value so the getFahrenheit function could continue on to add 32 to it.
+
+Finally, on the last line, we interpolated the function call within a console.log statement. This works because getFahrenheit returns it's value.
+
+We can use functions to section off small bits of logic or tasks, then use them when we need to. Writing functions can help take large and difficult problems and break them into small and manageable problems.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
