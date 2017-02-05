@@ -370,6 +370,28 @@ var arrayName = ["item1", "item2", "item3", ... ];
 var musicGenres = ["jazz", "pop", "rock"];
 
 
+/* Each item in an array has a numbered position. We can access an item using its number, just like we would in an ordinary list.
+
+JavaScript counts starting from 0, not 1, so the first item in an array will be at position 0. This is because JavaScript is zero-indexed.
+*/
+
+var arrayName = ["item1", "item2", "item3"];
+
+var listItem = arrayName[0];
+console.log(listItem); // Output: "item1";
+
+// We can find out how many items are inside of the array by using .length property:
+
+var arrayName = ["item1", "item2", "item3"];
+console.log(arrayName.length); // output: 3.
+
+// .push() allows to add items to the of an array:
+
+var arrayName = ["item0", "item1", "item2"];
+
+arrayName.push("item3", "item4");
+
+console.log(arrayName); //Output = ["item0", "item1", "item2", "item3", "item4"];
 
 
 
