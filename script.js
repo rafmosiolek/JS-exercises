@@ -394,6 +394,16 @@ arrayName.push("item3", "item4");
 console.log(arrayName); //Output = ["item0", "item1", "item2", "item3", "item4"];
 
 
+// .pop () deletes the last item of an array:
+
+var arrayName = ["item0", "item1", "item2"];
+
+arrayName.pop();
+
+console.log(arrayName); // Output = ["item0", "item1"]; item2 was deleted.
+
+
+
 
 
 
