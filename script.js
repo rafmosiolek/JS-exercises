@@ -520,3 +520,15 @@ You can see the while loop guessing a card, then seeing if it is a Spade, over a
 3. while loops are for looping over a code block an unknown amount of times.
 
 
+
+// JAVASCRIPT AND THE DOM
+
+
+// Linking JS to a HTML.
+
+/* We can link a JavaScript file to HTML by including it as the src of a <script> tag inside of an HTML file, like this:
+
+<script src='/.../file.js'></script> */
+
+
+
