@@ -531,4 +531,7 @@ You can see the while loop guessing a card, then seeing if it is a Spade, over a
 <script src='/.../file.js'></script> */
 
 
+// By linking js/main.js in the index.html file, we are asking the browser to run our JavaScript code each time index.html loads.
+
+
 
