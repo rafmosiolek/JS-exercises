@@ -477,11 +477,46 @@ I would love to visit: Porto
 I would love to visit: Barcelona
 */
 
+// "WHILE" LOOPS
+
+while (condition) {
+  // code block that loops until condition is false
+  }
+  /*
+1. The loop begins with the keyword while
+2/ Inside the parentheses, we can insert a condition. As long as the variable evaluates to true the block of code will loop.
+3. Inside the code block we can write any code we'd like to loop.
+*/
+
+var cards = ['Diamond', 'Spade', 'Heart', 'Club'];
+
+var currentCard = 'Heart';
+
+while (currentCard !== 'Spade') {
+  console.log(currentCard);
+
+  var randomNumber = Math.floor(Math.random() * 4);
+
+  currentCard = cards[randomNumber];
+}
+
+console.log('Found a Spade!');
+
+/* The program will flip the cards until the Spade is found.
+
+1. The first variable is naming the cards (the deck).
+2. The second variable hold the name of the hard which just has been flipped. We using "heart" as a first card.
+3. If the currentCard is not "Spade", console.log will print out the value of the currentCard.
+4. The randomNumber variable reassign currentCard to a new card from the cards array (the deck).
+5. On the last line, outside the program, console.log will print out when the "Spade" is found.
+
+You can see the while loop guessing a card, then seeing if it is a Spade, over and over, until it finds one.
+*/
 
 
-
-
-
-
+/* LOOPS REVIEW 
+1. for loops allow us to repeat a block of code a known amount of times.
+2. We can use a for loop inside another for loop to compare two lists.
+3. while loops are for looping over a code block an unknown amount of times.
 
 
