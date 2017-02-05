@@ -357,6 +357,19 @@ Functional Scope refers to variables created inside functions, which are not acc
 
 
 
+//  ARRAYS
+
+/* JavaScript arrays are used to store multiple values in a single variable.
+An array is a special variable, which can hold more than one value at a time.
+Arrays are JavaScript's way of making lists.
+These lists can store different data types and they are >>ordered<<, meaning >>the position of each list item is numbered by JavaScript.<<
+*/
+
+var arrayName = ["item1", "item2", "item3", ... ];
+
+var musicGenres = ["jazz", "pop", "rock"];
+
+
 
 
 
