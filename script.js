@@ -415,10 +415,67 @@ Arrays also have their own methods, including push and pop, which add and subtra
 
 
 
+// LOOPS
+
+/*
+
+Loops are handy, if you want to run the same code over and over again, each time with a different value.
+
+JavaScript supports different kinds of loops:
+
+for - loops through a block of code a number of times
+for/in - loops through the properties of an object
+while - loops through a block of code while a specified condition is true
+do/while - also loops through a block of code while a specified condition is true
+
+*/
 
 
+// "FOR" LOOPS
+
+// Instead of writing out the same code over and over, let’s make the computer loop through our array for us, using "for" loop.
+
+for(var i = 0; i < myArray.length; i++) {
+    console.log(myArray[i]);
+}
+
+/* 
+1. Within the for loop's parentheses, the >>start condition<< is var i = 0, which means the loop will start counting at 0.
+2. The stop condition is i < myArray.length, which means the loop will run as long as i is less than the length of the myArray. When i is greater than
+my Array, the loop will stop looping.
+3. The iterator is i++. That means each loop i will have added 1 to it.
+4. Finally, the code block inside {...}. The block will run each loop, until the loop stops (when i is greater than myArray.)
+
+The secret to loops is that i, the variable we created inside the for loop's parentheses, is always equal to a number.
+To be more clear, the first loop, i will equal 0, the second loop, i will equal 1, and the third loop, i will equal 2.
+*/
+
+var vacationSpots = ["Barcelona", "Porto", "Hong Kong"];
+
+for(var i = 0; i < vacationSpots.length; i++){
+  console.log("I would love to visit " + vacationSpots[i]);
+}
+
+/*  Output:
+I would love to visit Barcelona
+I would love to visit Porto
+I would love to visit Hong Kong
+*/
 
 
+// We can make out loop run backwards by modifying the start, stop, and iterator conditions:
+
+var vacationSpots = ["Barcelona", "Porto", "Hong Kong"];
+
+for(var i = vacationSpots.length-1; i >= 0; i--){
+  console.log("I would love to visit: " + vacationSpots[i]);
+}
+
+/* Output:
+I would love to visit: Hong Kong
+I would love to visit: Porto
+I would love to visit: Barcelona
+*/
 
 
 
