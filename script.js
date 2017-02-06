@@ -534,4 +534,61 @@ You can see the while loop guessing a card, then seeing if it is a Spade, over a
 // By linking js/main.js in the index.html file, we are asking the browser to run our JavaScript code each time index.html loads.
 
 
+/* 
+The Document Object Model, commonly referred to as the DOM', is the term for elements in an HTML file.
+Elements are any HTML code denoted by HTML tags, like <div>, <a>, or <p>.
+
+We can select an HTML element with JavaScript by selecting its class attribute, like this:
+*/
+
+var header = document.getElementsByClassName('example-class-name');
+
+/*
+To better interact with DOM elements, we can use a library.
+A library is a set of code that contains useful pre-written functions that help with certain tasks.
+
+A great library for interacting with the DOM is jQuery.
+*/
+
+
+/*
+In order to use jQuery, we need to:
+
+1. Include jQuery in our project. jQuery is a library, which means it is a set of code in a file, therefore we will need to link that file in our HTML in order to access it.
+
+2. Once we link it in our HTML file, we can use its functions and syntax in our js/main.js file.
+3. Once linked, we'll need to make sure our HTML is loaded before we run our jQuery and JavaScript code.
+
+This will prevent our jQuery and JavaScript code from running before the elements they select are rendered.
+*/
+
+/*
+Since jQuery is a library of code, we need to include a link to it in our index.html file before we can use it.
+Before the closing </body> tag, right above your current <script> tag, include this code:
+
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+
+The link to jQuery needs to be above the link to the js/main.js file, which will give main.js access to the jQuery library. */
+
+// jQuery has a built in function to check if the page is ready before it will run our code:
+
+$(document).ready(main);
+
+/* Notice that we put main inside the parentheses of ready.
+Main here is a callback, which means that our code will wait until the document (in other words, the DOM) is loaded, or ready.
+When it is, then it will execute the main function. jQuery calls back to the main function, therefore it's a callback.
+
+In the event that our HTML and CSS took 5 minutes to load, this code would wait until it loaded completely before running */
+
+
+function main() {
+  var $skillset = $('.skillset');
+  alert($skillset);
+}
+
+
+
+
+
+
 
