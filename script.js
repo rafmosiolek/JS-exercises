@@ -30,6 +30,15 @@ The block is delimited by a pair of curly brackets and may optionally be labelle
 */
 
 
+/*The substring() method extracts the characters from a string, between two specified indices, and returns the new sub string.
+
+This method extracts the characters in a string between "start" and "end", not including "end" itself.*/
+
+var str = "Hello world!";
+var res = str.substring(1, 4);
+
+// Output: ell
+
 
 
 /*
@@ -145,7 +154,19 @@ We can add extra conditions with to if/else statements with else if conditions.
 Switch statements make complicated if/else statements easier to read, however they achieve the same result as if/else statements.
 
 Comparison operators, like <, >, <=, and >= can compare two variables. After they compare, they always return either true or false.
+*/
+// This is an example of an if / else statement.
 
+if (12 / 4 === "Ari".length) {
+    confirm("Will this run the first block?");
+} else {
+    confirm("Or the second block?");
+}
+
+// If the first condition is met, execute the first code block. If it is not met, execute the code in the else block. 
+
+
+/*
 Logical Operators, like &&, ||, !==, and !, can compare two variables to see if a certain condition exists:
 && checks if both sides are true.
 || checks if either side is true.
@@ -654,4 +675,54 @@ var stats = "You took " + guesses + " guesses to sink the battleship, " +
 alert(stats);
 
 
+
+
+
+
+
+
+
+
+
+
+// ///////////////////////CODE YOUR OWN ADVENTURE GAME 
+
+// Check if the user is ready to play!
+confirm("Are you ready to play?");
+
+// Ask user for age
+var age = prompt("What's your age");
+
+
+
+ // If/else statement
+if(age<13) {
+    console.log("You are allowed to play, but developers are not taking any responsibilities, you little rascal!");
+} else {
+    console.log("Let's play!");
+}
+
+
+// Story:
+console.log("You are at a Justin Bieber concert, and you hear this lyric 'Lace my shoes off, start racing.'");
+console.log("Suddenly, Bieber stops and says, 'Who wants to race me?'");
+
+var userAnswer = prompt("Do you want to race Bieber on stage?");
+
+if (userAnswer = "yes") {
+    console.log("You and Bieber start racing. It's neck and neck! You win by a shoelace!");
+}
+else {
+    console.log("Oh no! Bieber shakes his head and sings 'I set a pace, so I can race without pacing.'");
+}
+//feedback form
+var feedback = prompt("Care to rate our game out of 10?");
+if (feedback > 8) {
+    console.log("Thank you! We should race at the next concert!");
+}
+else {
+    console.log("I'll keep practicing coding and racing.");
+}
+
+// //////////////////////////////END OF THE GAME
 
