@@ -166,6 +166,22 @@ if (12 / 4 === "Ari".length) {
 // If the first condition is met, execute the first code block. If it is not met, execute the code in the else block. 
 
 
+var speed = 65;
+
+// Complete the condition in the ()s on line 4
+if (speed > 80) {
+    console.log("Slow down");
+    // Use console.log() to print "Slow down"
+    
+} 
+else {
+    console.log("Drive safe");
+    // Use console.log() to print "Drive safe"
+
+
+}
+
+
 /*
 Logical Operators, like &&, ||, !==, and !, can compare two variables to see if a certain condition exists:
 && checks if both sides are true.
@@ -183,6 +199,33 @@ A JavaScript function is a block of code designed to perform a particular task.
 
 
 SYNTAX:
+
+
+
+1. First we declare a function using var, and then give it a name sayHello.
+The name should begin with a lowercase letter and the convention is to use lowerCamelCase where each word (except the first) begins with a capital letter.
+2. Then we use the function keyword to tell the computer that you are making a function.
+3.The code in the parentheses is called a parameter.
+It's a placeholder word that we give a specific value when we call the function.
+4. Then write your block of reusable code between { }. Every line of code in this block must end with a ;.
+
+You can run this code by "calling" the function, like this:*/
+
+sayHello("Emily");
+// Calling this function will print out Hello Emily.
+
+// Below is the greeting function!
+
+var greeting = function (name) {
+    console.log("Great to see you," + " " + name);
+};
+
+
+greeting("Steve");
+
+//Output: Great to seee you, Steve
+
+/*
 
 function name(parameter1, parameter2, parameter3) {
     code to be executed
@@ -252,6 +295,19 @@ When an event occurs (when a user clicks a button)
 When it is invoked (called) from JavaScript code
 Automatically (self invoked) */
 
+
+// This is what a function looks like:
+
+var divideByThree = function (number) {
+    var val = number / 3;
+    console.log(val);
+};
+
+// On line 12, we call the function by name
+// Here, it is called 'dividebythree'
+// We tell the computer what the number input is (i.e. 6)
+// The computer then runs the code inside the function!
+divideByThree(10);
 
 
 /* When JavaScript reaches a return statement, the function will stop executing.
@@ -630,15 +686,8 @@ $(document).ready(main);
 - slideToggle will make an element slide into and out of the page with an animation.
 */
 
-
-
-
-
-
-
-
-
-
+  
+ 
 
 // BATTLESHIP EXERCISE
 
@@ -725,4 +774,6 @@ else {
 }
 
 // //////////////////////////////END OF THE GAME
+
+
 
