@@ -870,6 +870,55 @@ function AllClear()             //Clear ALL entries!
  }
 
 
+// DoExponent - handling "times 10an integer":
+
+
+function DoExponent()
+ {
+  if ( Current.indexOf("e") == -1 )
+       { Current = Current + "e0";
+         document.Calculator.Display.value = Current;
+       };
+ }
+
+// PlusMinus - Changing the sign:
+
+function PlusMinus()
+ {
+  if  (Current.indexOf("e") != -1)  //if there is an exponent:
+    { var epos = Current.indexOf("e-");
+      if (epos != -1)
+         { Current = Current.substring(0,1+epos) + Current.substring(2+epos); //clip -ve exp 
+         } else
+         { epos = Current.indexOf("e");
+           Current = Current.substring(0,1+epos) + "-" + Current.substring(1+epos); //insert
+         };
+    } else                         //there is NO exponent:
+    {  if ( Current.indexOf("-") == 0 )
+         { Current = Current.substring(1);
+         } else
+         { Current = "-" + Current;
+         };
+    };
+  document.Calculator.Display.value = Current;
+ }
+
+ // Respond to pressing * / - + buttons
+
+function Operate(op)            //STORE OPERATION e.g. + * / etc.
+ {
+  if (op.indexOf("*") > -1) { Operation = 1; };       //codes for *
+  if (op.indexOf("/") > -1) { Operation = 2; };       // slash (divide)
+  if (op.indexOf("+") > -1) { Operation = 3; };       // sum
+  if (op.indexOf("-") > -1) { Operation = 4; };       // difference
+
+  Memory = Current;                 //store value
+  Current = "";                     //or we could use "0"
+  document.Calculator.Display.value = Current;
+ }
+
+
+
 
 
 
