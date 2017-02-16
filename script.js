@@ -918,7 +918,30 @@ function Operate(op)            //STORE OPERATION e.g. + * / etc.
  }
 
 
+// Calculate function on pressing the = button
 
+function Calculate()            //PERFORM CALCULATION (= button)
+ { 
+  if (Operation == 1) { Current = eval(Memory) * eval(Current); };
+  if (Operation == 2) { Current = eval(Memory) / eval(Current); };
+  if (Operation == 3) { Current = eval(Memory) + eval(Current); };
+  if (Operation == 4) { Current = eval(Memory) - eval(Current); };
+  Operation = 0;                //clear operation
+  Memory    = "0";              //clear memory
+  document.Calculator.Display.value = Current;
+ }
+
+ // Displey area fix - parseFloat build-in JS function
+
+ function FixCurrent()
+ {
+  Current = document.Calculator.Display.value;
+  Current = "" + parseFloat(Current);
+  if (Current.indexOf("NaN") != -1)
+    { Current = "Aargh! I don't understand";
+    };
+  document.Calculator.Display.value = Current;
+ }
 
 
 
