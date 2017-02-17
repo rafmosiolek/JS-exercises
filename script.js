@@ -565,8 +565,11 @@ for (var i = 5 ; i < 51; i+=5) {
 }
 // console.log will print string of numbers that start with 5, counted by 5 till 50 (5,10,15...)
 
+for(var i = 100; i > 0; i -= 5) {
+    console.log(i);
+}
 
-
+// loop that gets the computer to count down from 100 until 1 by 5.
 
 
 var vacationSpots = ["Barcelona", "Porto", "Hong Kong"];
@@ -595,6 +598,16 @@ I would love to visit: Hong Kong
 I would love to visit: Porto
 I would love to visit: Barcelona
 */
+
+
+var names = ["John", "James", "Ann", "Katie", "Steven"];
+
+for (var i=0; i<5; i++) {
+    console.log("I know someone called " + names[i]);
+}
+
+// Above: arrays inside the for loops
+
 
 // "WHILE" LOOPS
 
