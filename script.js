@@ -551,7 +551,23 @@ my Array, the loop will stop looping.
 
 The secret to loops is that i, the variable we created inside the for loop's parentheses, is always equal to a number.
 To be more clear, the first loop, i will equal 0, the second loop, i will equal 1, and the third loop, i will equal 2.
+
+i++     increment up by 1
+i--     decrement down by 1
+i += x  increment up by x
+i -= x  decrement down by x
+
 */
+
+//thus:
+for (var i = 5 ; i < 51; i+=5) {
+    console.log(i);
+}
+// console.log will print string of numbers that start with 5, counted by 5 till 50 (5,10,15...)
+
+
+
+
 
 var vacationSpots = ["Barcelona", "Porto", "Hong Kong"];
 
