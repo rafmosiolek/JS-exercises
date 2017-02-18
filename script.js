@@ -169,54 +169,8 @@ It is not necessary to break the last case in a switch block. The block breaks (
 */
 
 
-/*
-
-CONTROL FLOW REVIEW
-
-if/else statements make binary decisions and execute separate code based on a condition.
-
-We can add extra conditions with to if/else statements with else if conditions.
-
-Switch statements make complicated if/else statements easier to read, however they achieve the same result as if/else statements.
-
-Comparison operators, like <, >, <=, and >= can compare two variables. After they compare, they always return either true or false.
-*/
-// This is an example of an if / else statement.
-
-if (12 / 4 === "Ari".length) {
-    confirm("Will this run the first block?");
-} else {
-    confirm("Or the second block?");
-}
-
-// If the first condition is met, execute the first code block. If it is not met, execute the code in the else block. 
 
 
-var speed = 65;
-
-// Complete the condition in the ()s on line 4
-if (speed > 80) {
-    console.log("Slow down");
-    // Use console.log() to print "Slow down"
-    
-} 
-else {
-    console.log("Drive safe");
-    // Use console.log() to print "Drive safe"
-
-
-}
-
-
-/*
-Logical Operators, like &&, ||, !==, and !, can compare two variables to see if a certain condition exists:
-&& checks if both sides are true.
-|| checks if either side is true.
-!== checks if both sides are not equal.
-! changes a variable that is true to false, and vice versa.
-
-
-*/
 
 
 /* FUNCTIONS
@@ -609,6 +563,39 @@ for (var i=0; i<5; i++) {
 // Above: arrays inside the for loops
 
 
+
+/*jshint multistr:true */
+
+var text = "Hello! My name is Gavin. \ Is your name Gavin too?";
+var myName = "Gavin";
+var hits = [];
+
+for (var i = 0; i < text.length; i++){
+    if (text[i] === "G") {
+        for (var j = i; j < (i + myName.length); j++){
+            hits.push(text[j]);
+        }    
+    }
+}
+
+if (hits.length === 0) {
+    console.log("Your name wasn't found");
+} else {
+    console.log(hits);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 // "WHILE" LOOPS
 
 while (condition) {
@@ -646,10 +633,143 @@ You can see the while loop guessing a card, then seeing if it is a Spade, over a
 */
 
 
+var coinFace = Math.floor(Math.random() * 2);
+
+while(coinFace === 0){
+    console.log("Heads! Flipping again...");
+    var coinFace = Math.floor(Math.random() * 2);
+}
+console.log("Tails! Done flipping.");
+
+// coin flipping program, same rules as above;
+
+
+
+
+
+
+
+
+
+for (var i = 1; i < 100; i+= 10) {
+    console.log(i);
+};
+
+var condition = true;
+while (condition) {
+    console.log("hello world");
+    condition = false;
+};
+
+do { 
+    console.log("I'm looping once!");
+} while (condition);
+
+
+
+
+///////// DRAGON SLAYER GAME
+
+var slaying = true;
+var youHit = Math.floor(Math.random()*2);
+var damageThisRound = Math.floor(Math.random()*5+1);
+var totalDamage = 0;
+
+while(slaying) {
+    if (youHit) {
+        console.log("You hit the dragon!");
+        totalDamage += damageThisRound;
+        
+        if (totalDamage >= 4) {
+            console.log("You slew the dragon!");
+            var slaying = false;
+        } else {
+            var youHit = Math.floor(Math.random()*2);
+        }
+           
+    } else {
+        console.log("The dragon defeated you.");
+    }
+    
+    var slaying = false;
+};
+
+
+
+
 /* LOOPS REVIEW 
 1. for loops allow us to repeat a block of code a known amount of times.
 2. We can use a for loop inside another for loop to compare two lists.
 3. while loops are for looping over a code block an unknown amount of times.
+
+
+
+
+
+/*
+
+CONTROL FLOW REVIEW
+
+if/else statements make binary decisions and execute separate code based on a condition.
+
+We can add extra conditions with to if/else statements with else if conditions.
+
+Switch statements make complicated if/else statements easier to read, however they achieve the same result as if/else statements.
+
+Comparison operators, like <, >, <=, and >= can compare two variables. After they compare, they always return either true or false.
+*/
+// This is an example of an if / else statement.
+
+if (12 / 4 === "Ari".length) {
+    confirm("Will this run the first block?");
+} else {
+    confirm("Or the second block?");
+}
+
+// If the first condition is met, execute the first code block. If it is not met, execute the code in the else block. 
+
+
+var speed = 65;
+
+// Complete the condition in the ()s on line 4
+if (speed > 80) {
+    console.log("Slow down");
+    // Use console.log() to print "Slow down"
+    
+} 
+else {
+    console.log("Drive safe");
+    // Use console.log() to print "Drive safe"
+
+
+}
+
+
+// function that is checking if the number is even:
+
+var isEven = function(number) {
+    if (number % 2 === 0) {
+        return true;
+    } else if (isNaN(number) === true) {
+        return "This is not a number";
+    } else {
+        return false;
+    }
+};
+
+
+/*
+Logical Operators, like &&, ||, !==, and !, can compare two variables to see if a certain condition exists:
+&& checks if both sides are true.
+|| checks if either side is true.
+!== checks if both sides are not equal.
+! changes a variable that is true to false, and vice versa. */
+
+
+
+
+
+
 
 
 
