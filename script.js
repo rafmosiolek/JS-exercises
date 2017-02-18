@@ -1179,6 +1179,48 @@ console.log(compare(userChoice, computerChoice));
 
 
 
+//////////// CHOOSE YOUR OWN ADVENTURE GAME PART 2 (via codeacademy)
+
+
+var user = prompt("You've been walking through the mountains and you met the troll. Are you going to FIGHT him, to TRADE with him or to RUN?").toUpperCase();
+
+switch(user) {
+    
+    case "FIGHT":
+        var strong = prompt("Are you strong enough? (YES or NO?)").toUpperCase();
+        var agile = prompt("Are you agile enough? (YES or NO?)").toUpperCase();
+        if (strong === "YES" && agile === "YES") {
+            console.log("Well done, you managed to defeat the troll!");
+        } else { 
+            console.log("Well, you shouldn't skip that day at the gym. You got killed by troll, GAME OVER");
+        }
+        break;
+        
+    case "TRADE":
+        var trade = prompt("Do you have any goods you can trade? (YES or NO?)").toUpperCase();
+        if (trade === "YES") {
+            console.log("Yay! You sold the goods to troll in exchange for you life. You are free now!");
+        } else {
+            console.log("You stupid nerd, why would you choose to trade if you have anything to offer? You've got eaten by the troll! GAME OVER");
+        }
+        break;
+        
+    case "RUN":
+        var fast = prompt("Are you fast enough? (YES or NO?)").toUpperCase();
+        var headStart = prompt("Do you have a head start? (YES or NO?)").toUpperCase();
+        if (fast === "YES" || headStart === "YES") {
+            console.log("Fortunately for you, troll isn't too bright and quick, you've managed to escape!");
+        } else {
+            console.log("You're not fast and you didn't get a head start? You never had a chance! The troll eats you. GAME OVER");
+        }
+        break;
+    default:
+        console.log("What the heck have you been thinking?! Hit Run and try again, this time picking FIGHT, TRADE, or RUN!");
+}
+
+
+
+
 
 
 
