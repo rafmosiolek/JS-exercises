@@ -385,6 +385,24 @@ arrayName.pop();
 
 console.log(arrayName); // Output = ["item0", "item1"]; item2 was deleted.
 
+
+// ARRAYS don't need to containt the same type of data.
+// Heterogeneous array, which means a mixture of data types, like so:
+
+var mix = [42, true, "towel"];
+
+//Two-dimensional arrays nesting array one layer deep, eg.:
+
+var twoD = [[1,1], 1, [2,2,2], 34];
+
+/*A jagged array is an array whose elements are arrays. 
+The elements of a jagged array can be of different dimensions and sizes.
+A jagged array is sometimes called an "array of arrays." */
+
+var jagged = [[1,1,1,1],[2,2,2], "towel"];
+
+
+
 /*
 
 ARRAYS REVIEW:
