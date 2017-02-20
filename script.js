@@ -1240,6 +1240,78 @@ switch(user) {
 
 
 
+/////// INTRODUCTION TO OBJECTS
+
+/*
+
+Objects in JS are variables that can contain many values, on which methods (actions) can be perform.
+Methods are stored in properties as function definition.
+
+*/
+
+// Two ways to create an object in JS:
+
+// 1. object literal notation (creating an object with curly braces):
+
+var myObject = {type: "fancy", name: "object"};
+
+/* 2. Object Constructor - reates an object wrapper for the given value. 
+If the value is null or undefined, it will create and return an empty object, otherwise, it will return an object of a Type that corresponds to the given value.
+If the value is an object already, it will return the value. */
+
+var myObj = new Object();
+myObj.name = "charlie";
+myObj.age = 21;
+
+
+// When called in a non-constructor context, Object behaves identically to new Object().
+
+/*
+Syntax
+// Object initialiser or literal
+{ [ nameValuePair1[, nameValuePair2[, ...nameValuePairN] ] ] }
+
+// Called as a constructor
+new Object([value])
+Parameters
+
+nameValuePair1, nameValuePair2, ... nameValuePairN:
+Pairs of names (strings) and values (any value) where the name is separated from the value by a colon.
+
+value: any value.
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
