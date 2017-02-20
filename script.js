@@ -1282,6 +1282,12 @@ value: any value.
 
 */
 
+var interests = ["guns", "bombs", "shit"];
+var myOwnObject = new Object();
+myOwnObject.name = "Steven Cops";
+myOwnObject.type = "supercool";
+myOwnObject.age = "812";
+myOwnObject.interests = [interests]; // arrays can be key values for objects' properties 
 
 
 
@@ -1289,17 +1295,39 @@ value: any value.
 
 
 
+///// ADDRESS PHONE BOOK PROGRAM:
 
 
+var friends = new Object();
+friends.bill = {
+    firstName: "Bill",
+    lastName: "Gates",
+    number: "(000)-111-111-111",
+    address: ["1 Notting Hill", "Notting Hill", "W11 London"]
+    };
+friends.steve = {
+    firstName: "Steve",
+    lastName: "Jobs",
+    number: "(000)-222-222-222",
+    address: ["7 Knighstbridge", "Westimnster", "W1CX London"]
+    };
 
+var list = function(friends){
+    for (var name in friends) {
+        console.log(name)
+    }
+};
 
-
-
-
-
-
-
-
+var search = function(name){
+    for (var key in friends) {
+        if ( friends[key].firstName === name ) {
+            console.log(friends[key]);
+            return friends[key];
+        } else {
+            console.log("Friend not found");
+        }   
+    }
+};
 
 
 
