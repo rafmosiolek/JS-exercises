@@ -1,3 +1,21 @@
+// JS DATA TYPES:
+
+/*
+string
+integer
+boolean
+floating-point number
+object
+array
+*/
+// Conversion functions:
+
+
+eval()        // Converts a string to a number (An error results if the conversion fails)
+parseInt()    // Converts a string to an integer (As long as the string starts with an integer, even if other rubbish follows the integer.)
+parseFloat()  // Similar to parseInt, but extracts a floating point number.
+
+
 
 // VARIABLES
 
@@ -1221,6 +1239,40 @@ var search = function(name){
         }   
     }
 };
+
+
+
+///// MATHMEMATICAL FUNCTIONS
+
+
+Math.sin  //The sin of an angle.
+Math.cos  //Cosine.
+Math.tan  //Tangent.
+Math.asin, Math.acos, Math.atan //Arc sin, cos and tan respectively. The inverse of sin, cos, tan. (There's also an atan2).
+
+Math.random() //This useful function doesn't actually generate a random number, but a pseudo-random one. Useful in games!
+Math.abs()  //This simply gives the absolute value of a number (if it's negative, turns it into a positive number of equal magnitude).
+Math.log(),   Math.exp()// You would not expect that log refers to the natural logarithm of a number (base e). Unfortunately, in JavaScript, this is the case! The inverse function is what one would expect - exp. There is also a power function, pow that raises a number to a given power.
+Math.round(), Math.floor(), Math.ceiling() //  These are all used to gently adulterate floating point numbers. round() returns the closest integer to a number (what about 1.5 ?), floor() returns returns the greatest integer <= to the given number, ceiling() the smallest integer >= the number.
+Math.min(),  Math.max() // Both of these functions compare two numbers, returning either the lesser (min) or greater (max) of the two.
+
+
+//// CONSTANTS:
+
+Math.E  //Well, actually it should be e. But you know what we mean - it's about 2.71828182. The basis of natural logarithms..
+Math.PI //Yep, good old-fashioned pi. About 3.1415926535. A good approximation is 355/113, but here we have a convenient and more accurate one.
+Math.SQRT2 // The square root of two, if you need it.
+Math.SQRT1_2 // Hmm. The square root of one half.
+Math.LN2  //The natural log of 2.
+Math.LN10 //The natural log of ten.
+Math.LOG2E  //The base 2 logarithm of e.
+Math.LOG10E //The base 10 log of e.
+
+
+
+
+
+
 
 
 
