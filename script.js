@@ -1,3 +1,16 @@
+
+// VARIABLES
+
+/*Variable names
+
+How do we name a variable? Here are the rules:
+Case is IMPORTANT. The variable Important is different from the variable important. Be warneD, i mean, warned!
+Variables names must begin with a letter (or an _underscore);
+Variables names can contain digits (0..9) but cannot begin with them.
+Variables names can contain _underscores_;
+Variables names cannot contain any other characters.*/
+
+
 // SYNTAX EXERCISES
 
 var stopLight = "green"; /* variable; variables allows to assign data to a word value.
@@ -813,6 +826,26 @@ false || false;   // => false
 
 
 
+/*
+
+Level                                                     Operators on this level
+(1 takes precedence over 2, and so on..)              
+1                                                         ( ) also function calls and array subscripts (see below)
+2                                                         !   ++   --   - (unary minus; also ~)
+3                                                         *   /   %
+4                                                         +   -
+5                                                         <<   >>   >>> (used to shift numbers bit-by-bit)
+6                                                         <     >     <=     >=     
+7                                                         = =     !=
+8                                                         & 
+9                                                         ^    
+10                                                        |    
+11                                                        && 
+12                                                        ||   
+13                                                        ?:
+14                                                        = += -= *= /=
+
+*/
 
 
 
