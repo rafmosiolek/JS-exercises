@@ -1220,7 +1220,7 @@ friends.steve = {
     firstName: "Steve",
     lastName: "Jobs",
     number: "(000)-222-222-222",
-    address: ["7 Knighstbridge", "Westimnster", "W1CX London"]
+    address: ["7 Knighstbridge", "Westminster", "W1CX London"]
     };
 
 var list = function(friends){
