@@ -24,10 +24,25 @@
 
 	<!-- actual script -->
 	<script>
+		
+
 		function getChange(totalPayable, cashPaid) {
 			// store equivalent of coins as a variable called coins; 200 = 200p = £2, etc.
-			var coins = [200, 100, 50, 20, 10, 5, 1];
+			var coins = [200, 100, 50, 20, 10, 5, 2, 1];
 			var change = [];
+			var changeCash = cashPaid - totalPayable;
+
+			while (changeCash > 0) {
+				for (var i = 0; i < coins.length; i++) {
+					var coin = coins[i];
+					
+					if (changeCash >= coin) { 	// if changeCash is larger or equal to the current coin use that coin
+						changeCash -= coin; 	// remove this coin from the total change
+						change.push(coin); 		// add the coin to the change array of coins
+						i--;					// move back one coin and do the same
+					}
+				}
+			}
 			return change;
 		}
 	</script>
